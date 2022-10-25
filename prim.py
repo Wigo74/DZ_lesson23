@@ -1,3 +1,4 @@
+from typing import Union, SupportsIndex, Dict, Type
 
 queries = {
     "cmd1": str,
@@ -12,7 +13,7 @@ qr = {}
 
 qr['dic'] = list(queries)
 
-for d in qr:
-    a = d['cmd1']
+for d in qr['dic']:
+    a: Type[str] = d['cmd1']
     print(a)
 
