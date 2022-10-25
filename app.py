@@ -6,11 +6,6 @@ app = Flask(__name__)
 
 FILE_NAME = 'data/apache_logs.txt'
 
-input = {
-    "cmd": "filter",
-    "value": "POST"
-}
-
 
 @app.route('/perform_query', methods=['POST'])
 def perform_query():
